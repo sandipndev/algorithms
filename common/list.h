@@ -29,3 +29,12 @@ node *insert_last(node *head, int data) {
 
     return head_copy;
 }
+
+void print_list(node *head) {
+    printf("[ ");
+    while(head != NULL) {
+        printf(" %d,", head -> data);
+        head = head -> link;
+    }
+    printf("\b]\n");
+}
